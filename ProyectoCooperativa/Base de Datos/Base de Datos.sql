@@ -1,4 +1,4 @@
-
+-- prueba
 -- create Tabla Socio
 CREATE TABLE SOCIO (
   NIF VARCHAR(9),
