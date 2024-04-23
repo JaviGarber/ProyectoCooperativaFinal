@@ -2,6 +2,10 @@
 
 -- Tablas de Socio, Entrega, Venta y Producto.
 
+DROP DATABASE IF EXISTS Base_Cooperativa;
+CREATE DATABASE Base_Cooperativa;
+use Base_Cooperativa;
+
 CREATE TABLE SOCIO (
   NIF VARCHAR(9),
   Nombre VARCHAR(60) NOT NULL,
