@@ -21,7 +21,7 @@ $nombreAlta = $_POST['name'];
 $apellido1Alta = $_POST['surname1'];
 $apellid2Alta = $_POST['surname2'];
 
-$sentenciaSQL = "INSERT INTO Localidad VALUES(" . $SocioAlta. ",'" . $NIFAlta. " . $nombreAlta. "" . $SocioAlta. "")";
+$sentenciaSQL = "INSERT INTO Localidad VALUES(" . $SocioAlta. ",'" . $NIFAlta. " . $nombreAlta. "" . $apellido1Alta. "")";
 
 echo $sentenciaSQL;
  
