@@ -7,32 +7,32 @@
     </head>
     <body>
         <h2> Ingrese datos para hacerse Socio</h2>
-        <form action="" method="get">
+        <form action="Alta_socio.php" method="post" accept-charset="utf-8"></form>
             <ul>
               <li>
                 Número de Socio
-                <input type="number" name="Nº de Socio" id="Socio" readonly="readonly" value="7" />
+                <input type="number" name="Socio" id="Socio" readonly="readonly" value="7" />
               </li>
               <li>
                 <label for="name">NIF</label>
-                <input type="text" id="name" name="user_name" maxlength="9" />
+                <input type="text" id="nif" name="nif" maxlength="9" />
               </li>
               <li>
                 <label for="name">Nombre</label>
-                <input type="text" id="name" name="user_name" maxlength="50" />
+                <input type="text" id="name" name="name" maxlength="50" />
               </li>
               <li>
                 <label for="surname">Apellido 1</label>
-                <input type="text" id="surname1" name="user_surname1" maxlength="50"/>
+                <input type="text" id="surname1" name="surname1" maxlength="50"/>
               </li>
               <li>
                 <label for="surname">Apellido 2</label>
-                <input type="text" id="surname2" name="user_surname2" maxlength="50"/>
+                <input type="text" id="surname2" name="surname2" maxlength="50"/>
               </li>
               <h3> Dirección</h3>
               <li>
                 Tipo de vía
-                <select name="menu">
+                <select name="menu" id="dirección">
                   <option>Avenida</option>
                   <option>Calle</option>
                   <option>Carretera</option>
@@ -43,7 +43,7 @@
               </li>
               <li>
                 <label for="name">Nombre de la vía</label>
-                <input type="text" id="name" name="user_name" maxlength="80" />
+                <input type="text" id="via" name="via" maxlength="80" />
               </li>
               <li>
                 Número portal/ Bloque
@@ -55,19 +55,19 @@
               </li>
               <li>
                 <label for="name">Puerta</label>
-                <input type="text" id="name" name="user_name" maxlength="6" />
+                <input type="text" id="puerta" name="puerta" maxlength="6" />
               </li>
               <li>
                 <label for="name">Código Postal</label>
-                <input type="text" id="name" name="user_name" maxlength="5" />
+                <input type="text" id="código" name="código" maxlength="5" />
               </li>
               <li>
                 <label for="name">Localidad/Municipio</label>
-                <input type="text" id="name" name="user_name" maxlength="5" />
+                <input type="text" id="localidad" name="localidad" maxlength="5" />
               </li>
               <li>
                 Provincia
-                <select name="menu">
+                <select name="menu" id="Provincia">
                   <option>A Coruña</option>
                   <option>Alava</option>
                   <option> Albacete</option>
@@ -124,11 +124,11 @@
               </li>
               <li>
                 <label for="name">Teléfono</label>
-                <input type="text" id="name" name="user_name" maxlength="5" />
+                <input type="text" id="Tlf" name="Tlf" maxlength="5" />
               </li>
             <li>
             <label for="mail">Correo:</label>
-            <input type="email" id="mail" name="user_mail" />
+            <input type="email" id="mail" name="mail" />
           </li>
         
             <input type="submit" value="Enviar" align="center"/>
