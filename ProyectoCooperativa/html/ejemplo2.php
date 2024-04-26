@@ -15,6 +15,16 @@
     if (!$conn) {
        die("Connection failed: " . mysqli_connect_error());
     }
+
+    $sentenciaSQL="INSERT INTO SOCIO VALUES('17258439F', 'Alfonso', 'Martínez', 'Gil', 'C/ La Luna', '23002', 'Jaén', 'Jaén', '*2*******', '*1*********@gmail.com');";
+ 
+    if (!$conn->query($sentenciaSQL)) {
+        
+      echo "Falló la inserción de datos en la tabla: (" . $conn->errno . ") " . $conn->error;
+    
+    }
+      
+    echo "Se ha ejecutado correctamente la inserción de datos";
     
     mysqli_close($conn);
 ?>
