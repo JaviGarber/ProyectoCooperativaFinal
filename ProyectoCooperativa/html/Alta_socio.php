@@ -15,13 +15,18 @@
        die("Connection failed: " . mysqli_connect_error());
     }
 
-$SocioAlta = $_POST['Socio'];
 $NIFAlta = $_POST['nif'];
 $nombreAlta = $_POST['name'];
 $apellido1Alta = $_POST['surname1'];
-$apellid2Alta = $_POST['surname2'];
+$apellido2Alta = $_POST['surname2'];
+$direcAlta = $_POST['dirección'];
+$codigoAlta = $_POST['código'];
+$localidadAlta = $_POST['localidad'];
+$provinciaAlta = $_POST['provincia'];
+$telefonoAlta = $_POST['tlf'];
+$correoAlta = $_POST['mail'];
 
-$sentenciaSQL = "INSERT INTO Localidad VALUES(" . $SocioAlta. ",'" . $NIFAlta. " . $nombreAlta. "" . $apellido1Alta. "")";
+$sentenciaSQL = "INSERT INTO SOCIO (nif, nombre, apellido_1, apellido_2, direccion, c_postal,Municipio,provincia,Teléfono,Correo_electrónico) VALUES('" . $NIFAlta . "','" . $nombreAlta. "','" . $apellido1Alta. "','" . $apellido2Alta. "','" . $direcAlta. "','" . $codigoAlta. "','" . $localidadAlta. "','" . $provinciaAlta. "','" . $telefonoAlta. "','" . $correoAlta. "')"; 
 
 echo $sentenciaSQL;
  

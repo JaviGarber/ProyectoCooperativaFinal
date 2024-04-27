@@ -2,16 +2,17 @@
 <html>
     <head>
         <title>Dar de Alta a un Socio </title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="../css/Style.css" />
 
     </head>
     <body>
         <h2> Ingrese datos para hacerse Socio</h2>
-        <form action="Alta_socio.php" method="post" accept-charset="utf-8"></form>
+        <form action="Alta_socio.php" method="post" accept-charset="utf-8">
             <ul>
               <li>
                 Número de Socio
-                <input type="number" name="Socio" id="Socio" readonly="readonly" value="7" />
+                <input type="number" name="socio" id="socio" readonly="readonly" value="7" />
               </li>
               <li>
                 <label for="name">NIF</label>
@@ -29,33 +30,9 @@
                 <label for="surname">Apellido 2</label>
                 <input type="text" id="surname2" name="surname2" maxlength="50"/>
               </li>
-              <h3> Dirección</h3>
               <li>
-                Tipo de vía
-                <select name="menu" id="dirección">
-                  <option>Avenida</option>
-                  <option>Calle</option>
-                  <option>Carretera</option>
-                  <option>Paseo</option>
-                  <option>Plaza</option>
-                  <option>Otros</option>
-                </select>
-              </li>
-              <li>
-                <label for="name">Nombre de la vía</label>
-                <input type="text" id="via" name="via" maxlength="80" />
-              </li>
-              <li>
-                Número portal/ Bloque
-                <input type="number" name="numero">
-              </li>
-              <li>
-                Piso
-                <input type="number" name="numero">
-              </li>
-              <li>
-                <label for="name">Puerta</label>
-                <input type="text" id="puerta" name="puerta" maxlength="6" />
+                <label for="name">Dirección</label>
+                <input type="text" id="dirección" name="dirección" maxlength="80" />
               </li>
               <li>
                 <label for="name">Código Postal</label>
@@ -67,28 +44,28 @@
               </li>
               <li>
                 Provincia
-                <select name="menu" id="Provincia">
+                <select name="provincia" type="text" id="provincia">
                   <option>A Coruña</option>
                   <option>Alava</option>
-                  <option> Albacete</option>
+                  <option>Albacete</option>
                   <option>Alicante</option>
                   <option>Almeria</option>
                   <option>Asturias</option>
                   <option>Ávila</option>
                   <option>Badajoz</option>
-                  <option> Baleares</option>
+                  <option>Baleares</option>
                   <option>Barcelona</option>
                   <option>Burgos</option>
                   <option>Cáceres</option>
                   <option>Cádiz</option>
                   <option>Cantabria</option>
-                  <option> Castellón</option>
+                  <option>Castellón</option>
                   <option>Ceuta</option>
                   <option>Ciudad Real</option>
                   <option>Córdoba</option>
                   <option>Cuenca</option>
                   <option>Girona</option>
-                  <option> Granada</option>
+                  <option>Granada</option>
                   <option>Guadalajara</option>
                   <option>Gipuzkoa</option>
                   <option>Huelva</option>
@@ -107,13 +84,13 @@
                   <option>Ourense</option>
                   <option>Palencia</option>
                   <option>Pontevedra</option>
-                  <option> Salamanca</option>
+                  <option>Salamanca</option>
                   <option>Segovia</option>
                   <option>Sevilla</option>
                   <option>Soria</option>
                   <option>Tarragona</option>
                   <option>Santa Cruz de Tenerife</option>
-                  <option> Teruel</option>
+                  <option>Teruel</option>
                   <option>Toledo</option>
                   <option>Valencia</option>
                   <option>Valladolid</option>
@@ -124,14 +101,15 @@
               </li>
               <li>
                 <label for="name">Teléfono</label>
-                <input type="text" id="Tlf" name="Tlf" maxlength="5" />
+                <input type="text" id="tlf" name="tlf" maxlength="9" />
               </li>
             <li>
             <label for="mail">Correo:</label>
-            <input type="email" id="mail" name="mail" />
+            <input type="text" id="mail" name="mail" />
           </li>
         
             <input type="submit" value="Enviar" align="center"/>
+          </form>
             <li><a href= "../Cooperativa.html"target="_self">Home</a> </li>
           </ul>
         <br>
