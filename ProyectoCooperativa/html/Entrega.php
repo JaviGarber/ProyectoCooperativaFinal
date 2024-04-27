@@ -16,14 +16,14 @@
     }
 
 $N_EntregaEntrega = $_POST['Entrega'];
-$FechayhoraEntrega = $_POST['name'];
-$CantidadEntrega = $_POST['surname1'];
-$Tipo_aceitunaEntrega = $_POST['surname2'];
-$Parcela_SIGPAC = $_POST['dirección'];
-$Recinto_SIGPAC = $_POST['código'];
-$localidadAlta = $_POST['localidad'];
+$FechayhoraEntrega = $_POST['fecha_y_hora'];
+$CantidadEntrega = $_POST['aceituna'];
+$Tipo_aceitunaEntrega = $_POST['Tipo_Aceituna'];
+$Parcela_SIGPAC = $_POST['Sigpac'];
+$Recinto_SIGPAC = $_POST['r_Sigpac'];
 
-$sentenciaSQL = "INSERT INTO ENTREGA (N_Entrega, Fecha_y_hora, Cantidad, Tipo_aceituna, Parcela_SIGPAC, c_postal,Municipio,provincia,Teléfono,Correo_electrónico) VALUES('" . $NIFAlta . "','" . $nombreAlta. "','" . $apellido1Alta. "','" . $apellido2Alta. "','" . $direcAlta. "','" . $codigoAlta. "','" . $localidadAlta. "','" . $provinciaAlta. "','" . $telefonoAlta. "','" . $correoAlta. "')"; 
+
+$sentenciaSQL = "INSERT INTO ENTREGA (N_Entrega, Fecha_y_hora, Cantidad, Tipo_aceituna, Parcela_SIGPAC) VALUES('" . $N_EntregaEntrega . "','" . $FechayhoraEntrega. "','" . $CantidadEntrega. "','" .$Tipo_aceitunaEntrega. "','" . $Parcela_SIGPAC. "','" . $Recinto_SIGPAC. "')"; 
 
 echo $sentenciaSQL;
  
