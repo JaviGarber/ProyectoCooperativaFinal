@@ -5,18 +5,18 @@
     </head>
         <body>
             <h2>Entrega de Aceitunas</h2>
-            <form action="/my-handling-form-page" method="post">
+            <form action="Entrega.php" method="post" accept-charset="utf-8">
             <ul>
             <li>
                 <label for="name">Número de entrega:</label>
-                <input type="number" name="Nº de Entrega" id="Entrega" readonly="readonly" value="32" />
+                <input type="number" name="Entrega" id="Entrega" readonly="readonly" value="32" />
             </li>
 
-            <li>Fecha y hora de entrega: <input type="datetime-local" name="fecha y hora"> </li>
+            <li>Fecha y hora de entrega: <input type="datetime-local" name="fecha_y_hora" id="fecha_y_hora"> </li>
 
             <li>  <div>
                 <label>Número de socio:</label>
-                <input value="" required type="number" id="no_socio" disabled>
+                <input value="" required type="number" name="no_socio" id="no_socio" disabled>
               </div> </li>
             <li>
                 <label for="surname">Cantidad de Aceitunas:</label>
