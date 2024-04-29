@@ -7,19 +7,23 @@
     </head>
         <body>
             <h2>Realizar una Venta de Aceite a un Socio </h2>
-            <form action="/my-handling-form-page" method="post">
+            <form action="Venta.php" method="post" accept-charset="utf-8">
             <ul>
             <li>
                 <label for="name">Número factura:</label>
-                <input type="number" name="Nº de Factura" id="Factura" readonly="readonly" value="32" />
+                <input type="number" name="Factura" id="Factura" readonly="readonly" value="32" />
             </li>
 
-            <li>Fecha y hora de entrega: <input type="datetime-local" name="fecha y hora"> </li>
+            <li>Fecha y hora de entrega: <input type="datetime-local" name="fecha_y_hora" id="fecha_y_hora" required> </li>
 
-            <li>  <div>
+            <li>  
                 <label>Número de socio:</label>
-                <input value="" required type="number" id="no_socio" disabled>
-              </div> </li>
+                <input value="socio" required type="number" id="no_socio" name="no_socio" disabled>
+            </li>
+            <li>
+              <label for="NIF">NIF:</label>
+              <input type="text" name="NIF" id="NIF" required/>
+            </li>     
 
               <table border="2" class="default">
                 <tr>
@@ -30,29 +34,29 @@
                 </tr>
                 <tr>
                   <td><label for="localidad">Tipo de Aceite:</label>
-                    <select name="Tipo de Aceituna:">
+                    <select name="Tipo de Aceituna:" required>
                         <option value="1">Virgen Extra</option>
                         <option value="2">Virgen</option>
                         <option value="3">Cosecha temprana</option>
                         <option value="4">Ecológico</option>
                         <option value="5" selected>Selecciona</option>
                       </select></td>
-                  <td><input type="number" id="Cantidad" name="Cantidad" /></td>
-                  <td><input type="number" id="p_unitario" name="p_unitario" /></td>
-                  <td><input type="number" id="Cantidad" name="Cantidad" /></td>
+                  <td><input type="number" id="Cantidad1" name="Cantidad1" /></td>
+                  <td><input type="number" id="p_unitario1" name="p_unitario1" /></td>
+                  <td><input type="number" id="Subtotal" name="Subtotal" /></td>
                 </tr>
                 <tr>
                     <td><label for="localidad">Tipo de Aceite:</label>
-                        <select name="Tipo de Ac       <li><a href= "Cooperativa.html"target="_self">Home</a> </li>eituna:">
+                        <select name="Tipo de Aceituna:">
                             <option value="1">Virgen Extra</option>
                             <option value="2">Virgen</option>
                             <option value="3">Cosecha temprana</option>
                             <option value="4">Ecológico</option>
                             <option value="5" selected>Selecciona</option>
                           </select></td>
-                    <td><input type="number" id="Cantidad" name="Cantidad" /></td>
-                    <td><input type="number" id="p_unitario" name="p_unitario" /></td>
-                    <td><input type="number" id="Cantidad" name="Cantidad" /></td>
+                    <td><input type="number" id="Cantidad2" name="Cantidad2" /></td>
+                    <td><input type="number" id="p_unitario2" name="p_unitario2" /></td>
+                    <td><input type="number" id="Subtotal2" name="Subtotal2" /></td>
                   </tr>
                   <tr>
                     <td><label for="localidad">Tipo de Aceite:</label>
@@ -63,20 +67,19 @@
                             <option value="4">Ecológico</option>
                             <option value="5" selected>Selecciona</option>
                           </select></td>
-                    <td><input type="number" id="Cantidad" name="Cantidad" /></td>
-                    <td><input type="number" id="p_unitario" name="p_unitario" /></td>
-                    <td><input type="number" id="Cantidad" name="Cantidad" /></td>
+                    <td><input type="number" id="Cantidad3" name="Cantidad3" /></td>
+                    <td><input type="number" id="p_unitario3" name="p_unitario3" /></td>
+                    <td><input type="number" id="Subtotal3" name="Subtotal3" /></td>
                   </tr>
                   <tr>
                     <td colspan="2"></td>
                
                     <td>Total:</td>
-                    <td><input type="number" id="Cantidad" name="Cantidad" /></td>
+                    <td><input type="number" id="Total" name="Total" /></td>
                   </tr>
               </table>         
             <input type="submit" value="Enviar">
             <li><a href= "../Cooperativa.html"target="_self">Home</a> </li>
-
             </ul>
         </form>
         <br>

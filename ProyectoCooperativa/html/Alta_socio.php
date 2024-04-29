@@ -38,4 +38,6 @@ if (!$conn->query($sentenciaSQL)) {
 echo "Se ha ejecutado correctamente la inserción de datos";
 
     mysqli_close($conn);
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    exit();
 ?>
