@@ -1,3 +1,4 @@
+html{line-height: 1.5;}
 
 body {
     background-color: #ddf1e7d8;
@@ -63,4 +64,16 @@ img{
 }
 ul{list-style: none;}
 
+input:invalid {
+  border: 2px dashed red;
+}
 
+input:invalid:required {
+ 
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+table{text-align-last: center;}
