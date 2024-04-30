@@ -39,5 +39,7 @@ echo "Se ha ejecutado correctamente la inserción de datos";
 
     mysqli_close($conn);
     header('Location: ' . $_SERVER['HTTP_REFERER']);
+    echo "Se ha ejecutado correctamente la inserción de datos";
+
     exit();
 ?>
