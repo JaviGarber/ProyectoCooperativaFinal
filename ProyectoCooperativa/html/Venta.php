@@ -18,8 +18,6 @@
 $NIF = $_POST['NIF'];
 $FechayhoraVentas = $_POST['fecha_y_hora'];
 
-
-
 $sentenciaSQL = "INSERT INTO VENTAS (NIF, Fecha_y_hora) VALUES('" . $NIF . "','" . $FechayhoraVentas. "' )"; 
 
 // echo $sentenciaSQL;
