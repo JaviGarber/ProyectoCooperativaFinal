@@ -38,7 +38,6 @@ if ($statement->num_rows > 0) {
     $id = 0;
 }
 
-
 // Vender producto en primera fila
 $producto = $_POST['TipodeAceite'];
 $cantidad = $_POST['Cantidad1'];
