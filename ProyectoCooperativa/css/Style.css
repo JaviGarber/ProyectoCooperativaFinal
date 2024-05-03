@@ -58,9 +58,11 @@ li {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: grey;
+    
+    
 }
 img{
-    align:center;
+    text-align:center;
 }
 ul{list-style: none;}
 
@@ -68,12 +70,9 @@ input:invalid {
   border: 2px dashed red;
 }
 
-input:invalid:required {
- 
-}
-
 input:valid {
   border: 2px solid black;
 }
 
-table{text-align-last: center;}
+table{text-align-last: center;
+}
