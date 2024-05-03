@@ -22,7 +22,7 @@
             </li>
             <li>
               <label for="NIF"><b>* </b>NIF:</label>
-              <input type="text" name="NIF" id="NIF" required/>
+              <input type="text" name="NIF" id="NIF" maxlength="9" required/>
             </li>    
             <li>
               <table border="2" style="margin:0 auto;" class="default">
@@ -34,11 +34,11 @@
                 </tr>
                 <tr>
                   <td><label for="localidad">Tipo de Aceite:</label>
-                    <select name="Tipo de Aceituna:" required>
-                        <option value="1">Virgen Extra</option>
-                        <option value="2">Virgen</option>
-                        <option value="3">Cosecha temprana</option>
-                        <option value="4">Ecológico</option>
+                    <select name="TipodeAceite" id="TipodeAceite" required>
+                        <option value="A87VE">Virgen Extra</option>
+                        <option value="A93V0">Virgen</option>
+                        <option value="A12CT">Cosecha temprana</option>
+                        <option value="A55E0">Ecológico</option>
                         <option value="5" selected>Selecciona</option>
                       </select></td>
                   <td><input type="number" id="Cantidad1" name="Cantidad1" /></td>
@@ -47,26 +47,26 @@
                 </tr>
                 <tr>
                     <td><label for="localidad">Tipo de Aceite:</label>
-                        <select name="Tipo de Aceituna:">
-                            <option value="1">Virgen Extra</option>
-                            <option value="2">Virgen</option>
-                            <option value="3">Cosecha temprana</option>
-                            <option value="4">Ecológico</option>
-                            <option value="5" selected>Selecciona</option>
-                          </select></td>
+                        <select name="TipodeAceite2" id="TipodeAceite2">
+                          <option value="A87VE">Virgen Extra</option>
+                          <option value="A93V0">Virgen</option>
+                          <option value="A12CT">Cosecha temprana</option>
+                          <option value="A55E0">Ecológico</option>
+                          <option value="5" selected>Selecciona</option>
+                        </select></td>
                     <td><input type="number" id="Cantidad2" name="Cantidad2" /></td>
                     <td><input type="number" id="p_unitario2" name="p_unitario2" /></td>
                     <td><input type="number" id="Subtotal2" name="Subtotal2" /></td>
                   </tr>
                   <tr>
                     <td><label for="localidad">Tipo de Aceite:</label>
-                        <select name="Tipo de Aceituna:">
-                            <option value="1">Virgen Extra</option>
-                            <option value="2">Virgen</option>
-                            <option value="3">Cosecha temprana</option>
-                            <option value="4">Ecológico</option>
-                            <option value="5" selected>Selecciona</option>
-                          </select></td>
+                        <select name="TipodeAceite3" id="TipodeAceite3">
+                          <option value="A87VE">Virgen Extra</option>
+                          <option value="A93V0">Virgen</option>
+                          <option value="A12CT">Cosecha temprana</option>
+                          <option value="A55E0">Ecológico</option>
+                          <option value="5" selected>Selecciona</option>
+                        </select></td>
                     <td><input type="number" id="Cantidad3" name="Cantidad3" /></td>
                     <td><input type="number" id="p_unitario3" name="p_unitario3" /></td>
                     <td><input type="number" id="Subtotal3" name="Subtotal3" /></td>
